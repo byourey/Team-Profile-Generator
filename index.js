@@ -148,7 +148,7 @@ function addIntern() {
         }
 
         function getTeam() {
-            fs.writeFileSync(path.join(__dirname, '/dist', 'sample.html'),generateTeam(employees), "utf-8");
+            fs.writeFileSync(path.join(__dirname, '/dist', 'index.html'),generateTeam(employees), "utf-8");
         }
 
     
