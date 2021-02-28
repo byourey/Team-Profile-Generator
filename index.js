@@ -7,7 +7,7 @@ const Manager = require('./lib/Manager');
 
 const fs = require('fs');
 const path = require("path");
-const generateTeam = require("./dist/index.html");
+// const generateTeam = require("./dist/index.html");
 
 const employees =[];
 
