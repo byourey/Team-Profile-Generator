@@ -32,7 +32,7 @@ function addManager() {
         },
         {
         type: "input",
-        name: officeNumber,
+        name: "officeNumber",
         message: "Enter your office number"
         }
     ])
@@ -69,7 +69,7 @@ function addEngineer() {
         },
         {
             type: "input",
-            name: github,
+            name: "github",
             message: "Enter your github"
         }
     ])
@@ -83,6 +83,8 @@ function addEngineer() {
     })
     .catch(err => (console.log(err)));
 }
+
+addManager();
 
 // Questions to ask to add an Intern
 function addIntern() {
@@ -104,12 +106,12 @@ function addIntern() {
         },
         {
             type: "input",
-            name: school,
+            name: "school",
             message: "Enter your school name"
         }
     ])
     .then((answers) => {
-        const intern = new Intern(answers.name, answers.id, answers.email, answers.github);
+        const intern = new Intern(answers.name, answers.id, answers.email, answers.school);
     
         employees.push(intern);
     
@@ -134,7 +136,7 @@ function addIntern() {
             }
         ])
         .then((newAnswers) => {
-            if (newAnswers.name ==="Engineer") {
+            if (newAnswers.name === "Engineer") {
                 addEngineer();
             } else if (newAnswers.name === "Intern") {
                 addIntern();
@@ -149,8 +151,8 @@ function addIntern() {
             fs.writeFileSync(path.join(__dirname, '/dist', 'sample.html'),generateTeam(employees), "utf-8");
         }
 
-            const indexHTML = './dist/index.html';
-            const html = `
+    const indexHTML = './dist/index.html';
+   const html = `
 < !DOCTYPE html >
 <html lang="en">
     <head>
