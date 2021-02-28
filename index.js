@@ -4,11 +4,10 @@ const Employee = require('./lib/Employee');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 const Manager = require('./lib/Manager');
-const generateTemp = require("./src/template");
 
 const fs = require('fs');
 const path = require("path");
-const generateTeam = require("./src/template");
+const generateTeam = require("./dist/index.html");
 
 const employees =[];
 
@@ -207,6 +206,6 @@ function addIntern() {
         </div>
     </div>
     </body>
-    </html>
+</html>
 `
 
