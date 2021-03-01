@@ -1,16 +1,16 @@
 const Intern = require("../lib/Intern");
 
-test("can set school", () => {
+test("sets school", () => {
     const school = "SNHU";
-    const employee = new Intern("Bryan Miller", "1", "bmiller@gmail.com", school);
+    const employee = new Intern("Bryan Miller", "2", "bmiller@gmail.com", school);
 
     expect(employee.school).toBe(school);
 
 });
 
-test("can get school name with getSchool()", () => {
+test("gets school name with getSchool()", () => {
     const school = "SNHU";
-    const employee = new Intern("Bryan Miller", "1", "bmiller@gmail.com", school);
+    const employee = new Intern("Bryan Miller", "2", "bmiller@gmail.com", school);
 
     expect(employee.school).toBe(school);
 
@@ -18,7 +18,7 @@ test("can get school name with getSchool()", () => {
 
 test("getRole() returns Intern", () => {
     const role = "Intern";
-    const employee = new Intern("Bryan Miller", "1", "bmiller@gmail.com");
+    const employee = new Intern("Bryan Miller", "2", "bmiller@gmail.com");
 
     expect (employee.getRole()).toBe(role);
 })

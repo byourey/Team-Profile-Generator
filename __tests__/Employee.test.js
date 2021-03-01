@@ -1,20 +1,20 @@
 const Employee = require("../lib/Employee");
 
-test('can set employee name', () => {
+test('sets employee name', () => {
    const name = 'bj';
    const employee = new Employee(name, "10", "bmiller@gmail.com");
 
     expect(employee.name).toBe(name);   // scale to compare 
 });
 
-test('can set employee email', () => {
+test('sets employee email', () => {
  const email = 'bmiller@gmail.com';
  const employee  = new Employee('Brian Miller', 10, email);
 
 expect(employee.email).toBe('bmiller@gmail.com');
 });
 
-test("can set an employee ID", () => {
+test("sets employee ID", () => {
   const id = "200";
   const employee = new Employee("Bryan Miller", id, "bmiller@gmail.com");
 
