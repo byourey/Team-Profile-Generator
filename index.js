@@ -18,7 +18,7 @@ function addManager() {
         {
         type: "input",
         name: "name",
-        message: "Enter your name please?"
+        message: "Enter your Manager's name please?"
         },
         {
         type: "input",
@@ -55,7 +55,7 @@ function addEngineer() {
         {
             type: "input",
             name: "name",
-            message: "Enter your name"
+            message: "Enter the Engineers name"
         },
         {
             type: "input",
@@ -92,7 +92,7 @@ function addIntern() {
         {
             type: "input",
             name: "name",
-            message: "Enter your name"
+            message: "Enter the intern's name"
         },
         {
             type: "input",
