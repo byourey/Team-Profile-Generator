@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "Team Profile",
   "main": "index.js",
+  "directories": {
+    "test": "___tests__"
+    },
+    
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
