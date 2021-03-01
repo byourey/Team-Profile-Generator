@@ -8,8 +8,8 @@ test('can set employee name', () => {
 });
 
 test('can set employee email', () => {
- const email = 'bj@gmail.com';
- const employee  = new Employee('bj', 1, email);
+ const email = 'bmiller@gmail.com';
+ const employee  = new Employee('Brian Miller', 10, email);
 
 expect(employee.email).toBe('bmiller@gmail.com');
 });
@@ -40,14 +40,14 @@ test("can get employee Id with getId()", () => {
 
 test("can get employee email with getEmail()", () => {
   const email = "bmiller@gmail.com";
-  const employee = new Employee("Bryan Miller", "1", email);
+  const employee = new Employee("Bryan Miller", "2", email);
 
   expect (employee.getEmail()).toBe(email);
 })
 
 test("getRole() returns Employee", () => {
   const role = "Employee";
-  const employee = new Employee("Bryan Miller", "1", "bmiller@gmail.com");
+  const employee = new Employee("Bryan Miller", "2", "bmiller@gmail.com");
 
   expect (employee.getRole()).toBe(role);
 })
